@@ -42,6 +42,13 @@ header li {
     display: inline;
     padding-left: 30px;
 }
+header a {
+    text-decoration: inherit;
+    color: inherit;
+}
+header a:hover {
+    color: darkgray;
+}
 /* HEADER END */
 /* MISSION SECTION START */
 .mission {
@@ -74,8 +81,78 @@ header li {
 }
 /* MISSION SECTION END */
 /* TEA OF THE MONTH SECTION START */
+.tea-month {
+    max-width: 1000px;
+    display: inline-block;
+    text-align: center;
+}
+.tea-month-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.tea-month-content div {
+    margin: 0 15px;
+}
+.tea-month-content div h4 {
+    margin-top: 10px;
+}
 .tea-month img {
     height: 200px;
     width: 300px;
 }
 /* TEA OF THE MONTH SECTION END */
+/* LOCATIONS SECTION START */
+.locations {
+    display: inline-block;
+    max-height: 550px;
+    max-width: 1200px;
+    overflow: hidden;
+}
+.locations-content {
+    position: relative;
+    text-align: center;
+    display: flex;
+}
+.text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.text h2 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.text-boxes {
+    display: flex;
+    flex-direction: row;
+}
+.locations-content-downtown,
+.locations-content-eastbayside,
+.locations-content-oakdale {
+    background-color: black;
+    opacity: 1;
+    margin: 0px 20px 0 20px;
+    width: 300px;
+}
+.text-boxes h3,
+.text-boxes p {
+    padding: 10px 0;
+    margin: 15px;
+}
+/* LOCATIONS SECTION END */
+/* CONTACT START */
+.contact {
+    display: inline-block;
+    width: 1200px;
+    height: 200px;
+}
+/* CONTACT END */
+/* FOOTER START */
+footer {
+    display: flex;
+    text-align: flex-start;
+    margin-left: 20px;
+}
+/* FOOTER END */
